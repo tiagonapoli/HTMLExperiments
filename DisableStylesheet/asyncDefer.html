@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <link rel="stylesheet" async defer type="text/css" href="./blueBackground.css" />
+  <link rel="stylesheet" async defer type="text/css" href="./redBackground.css" />
+  <link rel="stylesheet" async defer type="text/css" crossorigin href="https://unpkg.com/vtex-tachyons@2.10.0/tachyons.css" />
+</head>
+
+<body class="bg-base">
+  <p>
+    This example disables tachyons stylesheet onload
+  </p>
+  <input />
+  <button onclick="toggleStylesheet('tachyons')"> Toggle tachyons </button>
+  <button onclick="toggleStylesheet('redBackground')"> Toggle background </button>
+
+  <script src="./toggleStylesheet.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      toggleStylesheet('tachyons')
+    })
+  </script>
+</body>
+
+</html>
